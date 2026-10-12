@@ -54,3 +54,17 @@ credentials.json
 # Temporary
 tmp/
 temp/
+# Generated data lake output
+data-lake/raw/*
+data-lake/bronze/*
+data-lake/silver/*
+data-lake/gold/*
+
+# Preserve data lake directory structure
+!data-lake/raw/.gitkeep
+!data-lake/bronze/.gitkeep
+!data-lake/silver/.gitkeep
+!data-lake/gold/.gitkeep
+
+# Generated analytics exports
+analytics/powerbi/*.csv
